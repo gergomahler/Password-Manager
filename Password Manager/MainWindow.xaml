@@ -9,8 +9,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="3*" />
-            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
@@ -19,9 +18,29 @@
         <ListView HorizontalAlignment="Left" Height="357" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="138">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridView.Columns>
+                        <GridViewColumn>
+                            <Button Content="Accounts" Width="128">
+
+                            </Button>
+                        </GridViewColumn>
+                    </GridView.Columns>
                 </GridView>
             </ListView.View>
         </ListView>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="357" Margin="11,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="613">
+            <ListView Name="Info" Margin="0,0,0,0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="URL" Width="102"/>
+                        <GridViewColumn Header="Email" Width="102"/>
+                        <GridViewColumn Header="Username" Width="102"/>
+                        <GridViewColumn Header="Password" Width="102"/>
+                        <GridViewColumn Header="Edit" Width="102"/>
+                        <GridViewColumn Header="Delete" Width="102"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
     </Grid>
 </Window>
