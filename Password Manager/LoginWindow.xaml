@@ -12,10 +12,10 @@
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
         <Label Content="Username:" HorizontalAlignment="Left" Margin="100,40,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="166,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="166,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
         <Label Content="Password:" HorizontalAlignment="Left" Margin="104,90,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="166,94,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox HorizontalAlignment="Left" Height="23" Margin="166,94,0,0" VerticalAlignment="Top" Width="120"/>
 
         <Button Content="Login" Click="Login_Btn_Click" HorizontalAlignment="Left" Margin="104,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
         <Button Content="Register" HorizontalAlignment="Left" Margin="211,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
