@@ -23,5 +23,15 @@ namespace Password_Manager
         {
             InitializeComponent();
         }
+
+        private void Login_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            //check credencials
+
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Title = "Password Manager";
+            this.Close();
+            mainWindow.Show();
+        }
     }
 }

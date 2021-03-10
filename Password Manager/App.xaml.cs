@@ -13,5 +13,11 @@ namespace Password_Manager
     /// </summary>
     public partial class App : Application
     {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Title = "Password Manager";
+            loginWindow.Show();
+        }
     }
 }

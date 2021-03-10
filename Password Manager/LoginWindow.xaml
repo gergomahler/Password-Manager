@@ -17,7 +17,7 @@
         <Label Content="Password:" HorizontalAlignment="Left" Margin="104,90,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="166,94,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
-        <Button Content="Login" HorizontalAlignment="Left" Margin="104,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Login" Click="Login_Btn_Click" HorizontalAlignment="Left" Margin="104,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
         <Button Content="Register" HorizontalAlignment="Left" Margin="211,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
 
     </Grid>

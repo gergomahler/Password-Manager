@@ -28,7 +28,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="357" Margin="11,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="613">
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="357" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="614">
             <ListView Name="Info" Margin="0,0,0,0">
                 <ListView.View>
                     <GridView>
