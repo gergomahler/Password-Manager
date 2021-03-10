@@ -29,10 +29,10 @@
             </ListView.View>
         </ListView>
         <Grid Grid.Column="1" HorizontalAlignment="Left" Height="357" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="614">
-            <ListView Name="Info" Margin="0,0,0,0">
+            <ListView Name="AccountInfo" Margin="0,0,0,0">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="URL" Width="102"/>
+                        <GridViewColumn Header="URL"  Width="102" />
                         <GridViewColumn Header="Email" Width="102"/>
                         <GridViewColumn Header="Username" Width="102"/>
                         <GridViewColumn Header="Password" Width="102"/>
@@ -40,6 +40,11 @@
                         <GridViewColumn Header="Delete" Width="102"/>
                     </GridView>
                 </ListView.View>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="GridViewColumnHeader">
+                        <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
             </ListView>
         </Grid>
         <Button Content="Add Account" Click="Add_Account_Btn_Click" Grid.Column="1" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Width="75"/>

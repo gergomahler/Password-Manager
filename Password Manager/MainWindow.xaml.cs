@@ -30,5 +30,11 @@ namespace Password_Manager
             AddNewAccount newAccount = new AddNewAccount();
             newAccount.Show();
         }
+
+        private void ListViewItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            string info = AccountInfo.SelectedItem.ToString();
+            Clipboard.SetText(info);
+        }
     }
 }
