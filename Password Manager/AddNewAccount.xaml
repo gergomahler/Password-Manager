@@ -22,7 +22,7 @@
         <Button Content="Show" HorizontalAlignment="Left" Margin="195,235,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Generate" HorizontalAlignment="Left" Margin="30,235,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Add" HorizontalAlignment="Left" Margin="30,300,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="195,300,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" Click="Close_Btn" HorizontalAlignment="Left" Margin="195,300,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

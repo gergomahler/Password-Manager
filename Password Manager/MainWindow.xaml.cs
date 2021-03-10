@@ -24,5 +24,11 @@ namespace Password_Manager
         {
             InitializeComponent();
         }
+
+        private void Add_Account_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            AddNewAccount newAccount = new AddNewAccount();
+            newAccount.Show();
+        }
     }
 }

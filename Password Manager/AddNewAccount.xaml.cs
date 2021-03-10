@@ -23,5 +23,10 @@ namespace Password_Manager
         {
             InitializeComponent();
         }
+
+        private void Close_Btn(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

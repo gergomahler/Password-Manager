@@ -42,5 +42,6 @@
                 </ListView.View>
             </ListView>
         </Grid>
+        <Button Content="Add Account" Click="Add_Account_Btn_Click" Grid.Column="1" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
