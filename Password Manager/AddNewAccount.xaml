@@ -5,24 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Password_Manager"
         mc:Ignorable="d"
-        Title="AddNewAccount" Height="400" Width="300">
+        Title="AddNewAccount" Height="320" Width="300">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,40,0,0" TextWrapping="Wrap" Text="www.example.com" VerticalAlignment="Top" Width="150"/>
-        <Label Content="URL:" HorizontalAlignment="Left" Margin="72,40,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="120,40,0,0" TextWrapping="Wrap" Text="www.example.com" VerticalAlignment="Top" Width="150"/>
+        <Label Content="URL:" HorizontalAlignment="Right" Margin="0,40,180,0" VerticalAlignment="Top"/>
 
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,80,0,0" TextWrapping="Wrap" Text="My Username" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Username:" HorizontalAlignment="Left" Margin="40,80,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="120,80,0,0" TextWrapping="Wrap" Text="My Username" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Username:" HorizontalAlignment="Right" Margin="0,80,180,0" VerticalAlignment="Top"/>
 
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,120,0,0" TextWrapping="Wrap" Text="myemail@email.com" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="120,120,0,0" TextWrapping="Wrap" Text="myemail@email.com" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Email:" HorizontalAlignment="Right" Margin="0,120,180,0" VerticalAlignment="Top"/>
 
-        <PasswordBox HorizontalAlignment="Left" Margin="120,160,0,0" VerticalAlignment="Top" Width="150" Height="23"/>
-        <Label Content="Password:" HorizontalAlignment="Left" Margin="44,160,0,0" VerticalAlignment="Top" Width="62"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="120,160,0,0" VerticalAlignment="Top" Width="150" Height="20"/>
+        <Label Content="Password:" HorizontalAlignment="Right" Margin="0,160,180,0" VerticalAlignment="Top" Width="62"/>
 
-        <Button Content="Show" HorizontalAlignment="Left" Margin="195,235,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Generate" HorizontalAlignment="Left" Margin="30,235,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="30,300,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Cancel" Click="Close_Btn" HorizontalAlignment="Left" Margin="195,300,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Show" HorizontalAlignment="Right" Margin="0,200,50,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Generate" HorizontalAlignment="Left" Margin="50,200,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="50,240,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" Click="Close_Btn" HorizontalAlignment="Right" Margin="0,240,50,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

@@ -15,28 +15,22 @@ using System.Windows.Shapes;
 namespace Password_Manager
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for RegisterWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class RegisterWindow : Window
     {
-        public LoginWindow()
+        public RegisterWindow()
         {
             InitializeComponent();
         }
 
-        private void Login_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            //check credencials
-
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Title = "Password Manager";
-            this.Close();
-            mainWindow.Show();
-        }
-
         private void Register_Btn_Click(object sender, RoutedEventArgs e)
         {
-            RegisterWindow registerWindow = new RegisterWindow();
+            //check if info is used
+            //check if input is correct
+            //save the new account to database
+
+            this.Close();
         }
     }
 }
