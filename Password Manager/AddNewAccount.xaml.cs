@@ -28,5 +28,34 @@ namespace Password_Manager
         {
             this.Close();
         }
+
+        private void Generate_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Add_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ShowPassword_Checked(object sender, RoutedEventArgs e)
+        {
+            PasswordTextBox.Text = PasswordBox.Password;
+            PasswordBox.Visibility = Visibility.Collapsed;
+            PasswordTextBox.Visibility = Visibility.Visible;
+
+            PasswordTextBox.Focus();
+        }
+
+        private void ShowPassword_Unchecked(object sender, RoutedEventArgs e)
+        {
+            PasswordBox.Password = PasswordTextBox.Text;
+            PasswordTextBox.Visibility = Visibility.Collapsed;
+            PasswordBox.Visibility = Visibility.Visible;
+
+            PasswordBox.Focus();
+
+        }
     }
 }

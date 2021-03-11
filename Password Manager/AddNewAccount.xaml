@@ -7,21 +7,22 @@
         mc:Ignorable="d"
         Title="AddNewAccount" Height="320" Width="300">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="120,40,0,0" TextWrapping="Wrap" Text="www.example.com" VerticalAlignment="Top" Width="150"/>
+        <TextBox Name="URL" HorizontalAlignment="Left" Height="20" Margin="120,40,0,0" TextWrapping="Wrap" Text="www.example.com" VerticalAlignment="Top" Width="150"/>
         <Label Content="URL:" HorizontalAlignment="Right" Margin="0,40,180,0" VerticalAlignment="Top"/>
 
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="120,80,0,0" TextWrapping="Wrap" Text="My Username" VerticalAlignment="Top" Width="150"/>
+        <TextBox Name="Username" HorizontalAlignment="Left" Height="20" Margin="120,80,0,0" TextWrapping="Wrap" Text="My Username" VerticalAlignment="Top" Width="150"/>
         <Label Content="Username:" HorizontalAlignment="Right" Margin="0,80,180,0" VerticalAlignment="Top"/>
 
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="120,120,0,0" TextWrapping="Wrap" Text="myemail@email.com" VerticalAlignment="Top" Width="150"/>
+        <TextBox Name="Email" HorizontalAlignment="Left" Height="20" Margin="120,120,0,0" TextWrapping="Wrap" Text="myemail@email.com" VerticalAlignment="Top" Width="150"/>
         <Label Content="Email:" HorizontalAlignment="Right" Margin="0,120,180,0" VerticalAlignment="Top"/>
 
-        <PasswordBox HorizontalAlignment="Left" Margin="120,160,0,0" VerticalAlignment="Top" Width="150" Height="20"/>
+        <PasswordBox Name="PasswordBox" HorizontalAlignment="Left" Margin="120,160,0,0" VerticalAlignment="Top" Width="150" Height="20"/>
+        <TextBox Name="PasswordTextBox" Visibility="Collapsed" HorizontalAlignment="Left" Margin="120,160,0,0" VerticalAlignment="Top" Width="150" Height="20"/>
         <Label Content="Password:" HorizontalAlignment="Right" Margin="0,160,180,0" VerticalAlignment="Top" Width="62"/>
 
-        <Button Content="Show" HorizontalAlignment="Right" Margin="0,200,50,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Generate" HorizontalAlignment="Left" Margin="50,200,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="50,240,0,0" VerticalAlignment="Top" Width="75"/>
+        <CheckBox Name="ShowPassword" Margin="0,200,75,0" HorizontalAlignment="Right" Content="Show" Checked="ShowPassword_Checked" Unchecked="ShowPassword_Unchecked"/>
+        <Button Content="Generate" Click="Generate_Btn_Click" HorizontalAlignment="Left" Margin="50,200,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Add" Click="Add_Btn_Click" HorizontalAlignment="Left" Margin="50,240,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Cancel" Click="Close_Btn" HorizontalAlignment="Right" Margin="0,240,50,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
