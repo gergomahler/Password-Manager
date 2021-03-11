@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="AddNewAccount" Height="320" Width="300">
     <Grid>
-        <TextBox Name="URL" HorizontalAlignment="Left" Height="20" Margin="120,40,0,0" TextWrapping="Wrap" Text="www.example.com" VerticalAlignment="Top" Width="150"/>
+        <TextBox Name="URL" HorizontalAlignment="Left" Height="20" Margin="120,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <Label Content="URL:" HorizontalAlignment="Right" Margin="0,40,180,0" VerticalAlignment="Top"/>
 
-        <TextBox Name="Username" HorizontalAlignment="Left" Height="20" Margin="120,80,0,0" TextWrapping="Wrap" Text="My Username" VerticalAlignment="Top" Width="150"/>
+        <TextBox Name="Username" HorizontalAlignment="Left" Height="20" Margin="120,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <Label Content="Username:" HorizontalAlignment="Right" Margin="0,80,180,0" VerticalAlignment="Top"/>
 
-        <TextBox Name="Email" HorizontalAlignment="Left" Height="20" Margin="120,120,0,0" TextWrapping="Wrap" Text="myemail@email.com" VerticalAlignment="Top" Width="150"/>
+        <TextBox Name="Email" HorizontalAlignment="Left" Height="20" Margin="120,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <Label Content="Email:" HorizontalAlignment="Right" Margin="0,120,180,0" VerticalAlignment="Top"/>
 
         <PasswordBox Name="PasswordBox" HorizontalAlignment="Left" Margin="120,160,0,0" VerticalAlignment="Top" Width="150" Height="20"/>
