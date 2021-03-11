@@ -37,6 +37,7 @@ namespace Password_Manager
         private void Register_Btn_Click(object sender, RoutedEventArgs e)
         {
             RegisterWindow registerWindow = new RegisterWindow();
+            registerWindow.Show();
         }
     }
 }
