@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Password_Manager
 {
@@ -29,6 +31,10 @@ namespace Password_Manager
             //check if info is used
             //check if input is correct
             //save the new account to database
+            string email = RegEmail.Text;
+            string username = RegUsername.Text;
+            string password = RegPassword.Password;
+
 
             this.Close();
         }
