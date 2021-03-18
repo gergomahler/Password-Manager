@@ -36,7 +36,7 @@ namespace Password_Manager
             string username = RegUsername.Text;
             string password = RegPassword.Password;
 
-            string SQLAdd = "INSERT INTO User (Email, Username, Password) VALUES(email, username, password)";
+            string SQLAdd = "INSERT INTO [User] (Email, Username, Password) VALUES('"+ email +"','"+ username +"','"+ password +"')";
             DbConnection.ExecuteSQL(SQLAdd);
 
 
