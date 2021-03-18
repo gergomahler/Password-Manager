@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
+using Password_Manager.Database;
 
 namespace Password_Manager
 {
@@ -34,6 +35,10 @@ namespace Password_Manager
             string email = RegEmail.Text;
             string username = RegUsername.Text;
             string password = RegPassword.Password;
+
+            string SQLAdd = "INSERT INTO User (Email, Username, Password) VALUES(email, username, password)";
+            DbConnection.ExecuteSQL(SQLAdd);
+
 
 
             this.Close();
