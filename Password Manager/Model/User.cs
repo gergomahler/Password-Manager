@@ -8,9 +8,10 @@ namespace Password_Manager.Model
 {
     class User
     {
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public List<Account> Accounts { get; set; }
+        private int ID { get; set; }
+        private string Username { get; set; }
+        private string Email { get; set; }
+        private string Password { get; set; }
+        private List<Account> Accounts { get; set; }
     }
 }
