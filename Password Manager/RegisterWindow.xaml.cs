@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
-using Password_Manager.Database;
+using Password_Manager.Services;
 
 namespace Password_Manager
 {
@@ -22,6 +22,8 @@ namespace Password_Manager
     /// </summary>
     public partial class RegisterWindow : Window
     {
+        DataHandler dataHandler = new DataHandler();
+
         public RegisterWindow()
         {
             InitializeComponent();
@@ -36,8 +38,7 @@ namespace Password_Manager
             string username = RegUsername.Text;
             string password = RegPassword.Password;
 
-            string SQLAdd = "INSERT INTO [User] (Email, Username, Password) VALUES('"+ email +"','"+ username +"','"+ password +"')";
-            DbConnection.ExecuteSQL(SQLAdd);
+            dataHandler.RegisterNewUser(email, username, password);
 
 
 
