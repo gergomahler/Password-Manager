@@ -22,6 +22,7 @@ namespace Password_Manager
     /// </summary>
     public partial class RegisterWindow : Window
     {
+        DataHandler dataHandler = new DataHandler();
 
         public RegisterWindow()
         {
@@ -37,6 +38,7 @@ namespace Password_Manager
             string username = RegUsername.Text;
             string password = RegPassword.Password;
 
+            dataHandler.RegisterNewUser(email, username, password);
 
 
 
