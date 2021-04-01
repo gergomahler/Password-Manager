@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="connection_string" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\mahle\Desktop\Codecool\Jobhunt\Password Manager\Password Manager\Database\db_password_manager.mdf";Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\mahle\Desktop\Codecool\Jobhunt\Password Manager\Password Manager\Database\password_manager_database.mdf";Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

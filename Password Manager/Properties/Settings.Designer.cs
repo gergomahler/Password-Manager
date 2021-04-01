@@ -26,8 +26,8 @@ namespace Password_Manager.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\mahle\\Desktop\\Codec" +
-            "ool\\Jobhunt\\Password Manager\\Password Manager\\Database\\db_password_manager.mdf\";" +
-            "Integrated Security=True")]
+            "ool\\Jobhunt\\Password Manager\\Password Manager\\Database\\password_manager_database" +
+            ".mdf\";Integrated Security=True")]
         public string connection_string {
             get {
                 return ((string)(this["connection_string"]));
