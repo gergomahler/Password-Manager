@@ -8,11 +8,20 @@ namespace Password_Manager.Model
 {
     class Account
     {
-        private int ID { get; set; }
-        private string URL { get; set; }
-        private string Email { get; set; }
-        private string Username { get; set; }
-        private string Password { get; set; }
+        public Account()
+        {
+            ID = 0;
+            URL = "";
+            Email = "";
+            Username = "";
+            Password = "";
+        }
+
+        public int ID { get; set; }
+        public string URL { get; set; }
+        public string Email { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
     }
 }

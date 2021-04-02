@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Password_Manager.Database;
 using System.Data;
 using System.Data.SqlClient;
+using Password_Manager.Model;
 
 namespace Password_Manager.Services
 {
@@ -18,7 +19,7 @@ namespace Password_Manager.Services
 
         public void RegisterNewUser (string email, string username, string password)
         {
-            command.CommandText = "INSERT INTO [User] (Email, Username, Password)" + "VALUES('" + email + "','" + username + "','" + password + "')";
+            command.CommandText = "INSERT INTO [User] (email, username, password)" + "VALUES('" + email + "','" + username + "','" + password + "')";
             command.CommandType = CommandType.Text;
             command.Connection = connection;
 
@@ -27,11 +28,44 @@ namespace Password_Manager.Services
             command.ExecuteNonQuery();
 
             connection.Close();
+        }
 
-            /*string sqlQuery = "INSERT INTO [User] (Email, Username, Password) " +
-                             "VALUES('" + email + "','" + username + "','" + password + "')";
+        public User Login (string username, string password)
+        {
+            User user = new User();
 
-            DbConnection.ExecuteSQL(sqlQuery);*/
+            command.CommandText = "SELECT Id, username FROM [User] WHERE username='" + username + "'";
+            command.CommandType = CommandType.Text;
+            command.Connection = connection;
+
+            reader = command.ExecuteReader();
+            if (reader["Password"].ToString() == password)
+            {
+                user.ID = (int)reader["Id"];
+                user.Username = reader["username"].ToString();
+            }
+
+            reader.Close();
+            reader.Dispose();
+            command.Dispose();
+            connection.Close();
+
+
+            return user;
+        }
+
+        public List<Account> GetUserAccounts (int userId)
+        {
+            List<Account> accounts = new List<Account>();
+
+            command.CommandText = "SELECT * FROM [Account] WHERE userID= '" + userId + "'";
+            command.CommandType = CommandType.Text;
+            command.Connection = connection;
+
+            reader = command.ExecuteReader();
+
+
+            return accounts;
         }
     }
 }
